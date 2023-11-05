@@ -1,0 +1,12 @@
+h1 {
+    text-align: center;
+    font-weight: normal;
+    text-decoration: yellow underline;
+    letter-spacing: 10px;
+    font-size: 60px;
+    font-family: Segoe UI, Verdana, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}

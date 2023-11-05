@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Forms Demo</h1>
+
+    <form action="/tacos">
+        <p>
+            <label for="uname">Enter your username</label>
+            <input type="text" placeholder="Username" id="uname" , name="username">
+        </p>
+        <p>
+            <label for="pwd">Enter your password</label>
+            <input type="password" placeholder="password" id="pwd" name="password">
+        </p>
+        <p>
+            <label for="clr">Enter a color</label>
+            <input type="color" id="clr" name="color">
+        </p>
+        <p>
+            <label for="num">Enter a number</label>
+            <input type="number" placeholder="enter number" id="num" name="num" min="1" max="10000000">
+        </p>
+        <button type="button">
+            does nothing
+        </button>
+        <button type="submit">
+            Submit
+        </button>
+
+    </form>
+
+    <p>
+    <form action="https://www.reddit.com/search">
+        <label for="rsearch">Search Reddit!</label>
+        <input type="text" name="q" id="rsearch">
+        <button>
+            Search
+        </button>
+    </form>
+    </p>
+
+    <h2>More Inputs</h2>
+    <form action="/birds">
+        <p>
+            <input type="checkbox" id="agree" name="agree_tos">
+            <label for="agree">I agree to TOS</label>
+        </p>
+        <p>
+            <label for="s">Small</label>
+            <input type="radio" name="size" id="s" value="small">
+            <label for="m">Medium</label>
+            <input type="radio" name="size" id="m" value="med">
+            <label for="l">Large</label>
+            <input type="radio" name="size" id="l" value="large">
+        </p>
+        <p>
+            <label for="meal">Select Entree</label>
+            <select name="meal" id="meal">
+                <option value="fish">Fish</option>
+                <option value="Veg">veg</option>
+                <option value="steak">Steak</option>
+            </select>
+        </p>
+        <p>
+            <label for="rinput">Amount of Cheese</label>
+            <input type="range" id="rinput" min="0" max="100" value="75" step="5" name="cheese_level">
+        </p>
+        <p>
+            <label for="requests">Special Requests</label>
+            <textarea name="requests" id="" cols="40" rows="5" placeholder="Any special requests?"></textarea>
+        </p>
+        <button>Submit</button>
+
+        <h2>Validations Form</h2>
+        <form action="/dummy">
+            <p>
+                <label for="first">Enter First Name</label>
+                <input type="text" name="first" id="first" required>
+            </p>
+            <p>
+                <label for="uname">Enter First Name</label>
+                <input type="text" name="uname" id="uname" required minlength="3" maxlength="12" required>
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </p>
+            <button>submit</button>
+        </form>
+    </form>
+</body>
+
+</html>
